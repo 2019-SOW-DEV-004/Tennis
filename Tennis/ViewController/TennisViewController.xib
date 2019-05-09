@@ -27,6 +27,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXu-Ay-KDi">
                             <rect key="frame" x="16" y="79" width="135.5" height="30"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" identifier="player1Scores"/>
                             <state key="normal" title="Score">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,6 +62,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhl-vy-VcF">
                             <rect key="frame" x="16" y="77" width="135.5" height="30"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" identifier="player2Scores"/>
                             <state key="normal" title="Score">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,6 +93,7 @@
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love All" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe8-xD-bjV">
                     <rect key="frame" x="16" y="336" width="343" height="21"/>
+                    <accessibility key="accessibilityConfiguration" identifier="Scores"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="USg-Re-TCA"/>
                     </constraints>
@@ -100,6 +103,7 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd4-BH-nW2">
                     <rect key="frame" x="309" y="34" width="50" height="30"/>
+                    <accessibility key="accessibilityConfiguration" identifier="restart"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="WYP-ct-6qL"/>
                         <constraint firstAttribute="height" constant="30" id="kn0-EH-8ti"/>
