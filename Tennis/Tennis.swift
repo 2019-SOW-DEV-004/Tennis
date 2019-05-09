@@ -19,7 +19,7 @@ class Tennis {
         
         updatePlayersScore(currentPlayer)
         
-        displayPlayersScore()
+        translatePlayersScore()
     }
     
     private func updatePlayersScore(_ currentPlayer: CurrentPlayer) {
@@ -31,7 +31,7 @@ class Tennis {
         }
     }
     
-    private func displayPlayersScore() {
+    private func translatePlayersScore() {
         if isWinner() {
             isGameOver = true
             tennisView.displayScore(highestScorePlayerName() + " " + TennisStatus.Won.rawValue)
