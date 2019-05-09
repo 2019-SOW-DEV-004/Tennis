@@ -3,7 +3,7 @@ import XCTest
 
 class TennisTests: XCTestCase {
     private var tennisView: SPY_TennisView!
-    private var tennis: Tennis!
+    private var tennis: TennisPresenter!
 
     override func setUp() {
         tennisView = SPY_TennisView()
@@ -53,20 +53,20 @@ class TennisTests: XCTestCase {
         XCTAssertEqual(TestScores.asString(.SecondPlayerWon),tennisView.gameScore())
     }
     
-    private func buildTennisGame(_ tennisView: TennisView) -> Tennis {
+    private func buildTennisGame(_ tennisView: TennisView) -> TennisPresenter {
         let firstPlayer = Player.init("FirstPlayer")
         let secondPlayer = Player.init("SecondPlayer")
         
-        return Tennis.init(firstPlayer, secondPlayer, tennisView)
+        return TennisPresenter.init(firstPlayer, secondPlayer, tennisView)
     }
     
-    private func winConsecutivePointsForFirstPlayer(_ numberOfTimes: Int, tennis: Tennis) {
+    private func winConsecutivePointsForFirstPlayer(_ numberOfTimes: Int, tennis: TennisPresenter) {
         for _ in 1 ... numberOfTimes {
             tennis.scoresPoint(.FirstPlayer)
         }
     }
     
-    private func winConsecutivePointsForSecondPlayer(_ numberOfTimes: Int, tennis: Tennis) {
+    private func winConsecutivePointsForSecondPlayer(_ numberOfTimes: Int, tennis: TennisPresenter) {
         for _ in 1 ... numberOfTimes {
             tennis.scoresPoint(.SecondPlayer)
         }

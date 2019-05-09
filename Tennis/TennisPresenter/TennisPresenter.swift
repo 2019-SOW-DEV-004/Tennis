@@ -1,4 +1,4 @@
-class Tennis {
+class TennisPresenter {
     private let firstPlayer: Player
     private let secondPlayer: Player
     private unowned let tennisView: TennisView
