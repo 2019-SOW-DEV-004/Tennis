@@ -9,11 +9,11 @@ class TennisViewController: UIViewController, TennisView {
         tennisGamePresenter = buildTennisGamePresenter()
     }
     
-    @IBAction func playerOneScores(_ sender: Any) {
+    @IBAction func firstPlayerScores(_ sender: Any) {
         tennisGamePresenter.scoresPoint(.FirstPlayer)
     }
     
-    @IBAction func playerTwoScores(_ sender: Any) {
+    @IBAction func secondPlayerScores(_ sender: Any) {
         tennisGamePresenter.scoresPoint(.SecondPlayer)
     }
     
