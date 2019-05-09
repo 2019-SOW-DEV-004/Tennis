@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TennisViewController" customModule="Tennis" customModuleProvider="target">
             <connections>
-                <outlet property="gameStatus" destination="xe8-xD-bjV" id="38L-NN-h7c"/>
+                <outlet property="gameScore" destination="xe8-xD-bjV" id="38L-NN-h7c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

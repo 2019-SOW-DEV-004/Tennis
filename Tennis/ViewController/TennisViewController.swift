@@ -2,7 +2,7 @@ import UIKit
 
 class TennisViewController: UIViewController, TennisView {
     private var tennisGamePresenter: TennisPresenter!
-    @IBOutlet weak var gameStatus: UILabel!
+    @IBOutlet weak var gameScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class TennisViewController: UIViewController, TennisView {
     }
     
     private func updateScore(_ score: String) {
-        self.gameStatus.text = score
+        self.gameScore.text = score
     }
     
     //Mark: Tennis View
