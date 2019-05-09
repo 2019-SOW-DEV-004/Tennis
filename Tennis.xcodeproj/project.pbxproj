@@ -114,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				6A8A2A882284A4520075BF13 /* ViewController */,
-				6A8A2A942284C96F0075BF13 /* TennisPresenter */,
+				6A8A2A942284C96F0075BF13 /* Presenter */,
 				6A8A2A892284A4630075BF13 /* Model */,
 				6A8A2A8A2284A4790075BF13 /* Constants */,
 				6A8A2A44228474F20075BF13 /* AppDelegate.swift */,
@@ -128,7 +128,7 @@
 		6A8A2A58228474F30075BF13 /* TennisTests */ = {
 			isa = PBXGroup;
 			children = (
-				6A8A2A952284C9930075BF13 /* TennisPresenter */,
+				6A8A2A952284C9930075BF13 /* Presenter */,
 				6A8A2A8B2284A4B80075BF13 /* Model */,
 				6A8A2A5B228474F30075BF13 /* Info.plist */,
 			);
@@ -172,20 +172,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6A8A2A942284C96F0075BF13 /* TennisPresenter */ = {
+		6A8A2A942284C96F0075BF13 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				6A8A2A80228496030075BF13 /* TennisPresenter.swift */,
 			);
-			path = TennisPresenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		6A8A2A952284C9930075BF13 /* TennisPresenter */ = {
+		6A8A2A952284C9930075BF13 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				6A8A2A82228496C50075BF13 /* TennisPresenterTests.swift */,
 			);
-			path = TennisPresenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		6A8A2A9B2284D8420075BF13 /* TennisUITests */ = {
