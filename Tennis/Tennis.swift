@@ -17,14 +17,18 @@ class Tennis {
             return
         }
         
+        updatePlayersScore(currentPlayer)
+        
+        displayPlayersScore()
+    }
+    
+    private func updatePlayersScore(_ currentPlayer: CurrentPlayer) {
         switch currentPlayer {
         case .firstPlayer:
             firstPlayer.updateScore()
         case .secondPlayer:
             secondPlayer.updateScore()
         }
-        
-        displayPlayersScore()
     }
     
     private func displayPlayersScore() {
