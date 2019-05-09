@@ -2,7 +2,6 @@ import XCTest
 @testable import Tennis
 
 class TennisTests: XCTestCase {
-    
     private var tennisView: SPY_TennisView!
 
     override func setUp() {
@@ -12,7 +11,7 @@ class TennisTests: XCTestCase {
     func test_ShouldReturnLoveAll_WhenPlayerStartsTheGame() {
         let _ = buildTennisGame()
         
-        XCTAssertEqual(TestScores.LoveAll.rawValue, tennisView.gameScore())
+        XCTAssertEqual(TestScores.asString(.LoveAll), tennisView.gameScore())
     }
     
     func test_ShouldReturnFifteenEach_WhenEachPlayerScoresSinglePoint() {
@@ -21,7 +20,7 @@ class TennisTests: XCTestCase {
         tennis.scoresPoint(.firstPlayer)
         tennis.scoresPoint(.secondPlayer)
         
-        XCTAssertEqual(TestScores.FifteenEach.rawValue, tennisView.gameScore())
+        XCTAssertEqual(TestScores.asString(.FifteenEach), tennisView.gameScore())
     }
     
     private func buildTennisGame() -> Tennis {
@@ -47,5 +46,9 @@ fileprivate class SPY_TennisView: TennisView {
 fileprivate enum TestScores: String {
     case LoveAll = "0 - 0"
     case FifteenEach = "15 - 15"
+    
+    static func asString(_ testScores: TestScores) -> String {
+        return testScores.rawValue
+    }
 }
 
