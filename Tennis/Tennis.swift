@@ -22,6 +22,20 @@ class Tennis {
     }
     
     private func displayPlayersScore() {
+        if isDeuce() {
+            tennisView.displayScore("Deuce")
+            return
+        }
+        
         tennisView.displayScore(self.firstPlayer.translateScore() + " - " + self.secondPlayer.translateScore())
+    }
+    
+    //Mark: Helper Methods
+    private func isDeuce() -> Bool {
+        return firstPlayer.currentScore() == secondPlayer.currentScore() && hasPlayersScoredMoreThanFourtyPoints()
+    }
+    
+    private func hasPlayersScoredMoreThanFourtyPoints() -> Bool {
+        return firstPlayer.hasScoredMoreThanFourtyPoints() || secondPlayer.hasScoredMoreThanFourtyPoints()
     }
 }

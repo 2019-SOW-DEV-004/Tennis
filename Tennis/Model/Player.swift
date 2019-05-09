@@ -32,4 +32,8 @@ class Player {
             return TranslateScore.Advantage.rawValue
         }
     }
+    
+    func hasScoredMoreThanFourtyPoints() -> Bool {
+        return score > 3
+    }
 }

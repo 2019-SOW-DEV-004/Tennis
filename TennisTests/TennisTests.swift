@@ -23,11 +23,33 @@ class TennisTests: XCTestCase {
         XCTAssertEqual(TestScores.asString(.FifteenEach), tennisView.gameScore())
     }
     
+    func test_ShouldReturnDeuce_WhenBothPlayerScoresSameScoreAndMoreThanFourty() {
+        let tennis = buildTennisGame()
+        
+        winConsecutivePointsForFirstPlayer(3, tennis: tennis)
+        winConsecutivePointsForSecondPlayer(4, tennis: tennis)
+        tennis.scoresPoint(.firstPlayer)
+        
+        XCTAssertEqual(TestScores.asString(.Deuce),tennisView.gameScore())
+    }
+    
     private func buildTennisGame() -> Tennis {
         let firstPlayer = Player.init("FirstPlayer")
         let secondPlayer = Player.init("SecondPlayer")
         
         return Tennis.init(firstPlayer, secondPlayer, tennisView)
+    }
+    
+    private func winConsecutivePointsForFirstPlayer(_ numberOfTimes: Int, tennis: Tennis) {
+        for _ in 1 ... numberOfTimes {
+            tennis.scoresPoint(.firstPlayer)
+        }
+    }
+    
+    private func winConsecutivePointsForSecondPlayer(_ numberOfTimes: Int, tennis: Tennis) {
+        for _ in 1 ... numberOfTimes {
+            tennis.scoresPoint(.secondPlayer)
+        }
     }
 }
 
@@ -46,6 +68,7 @@ fileprivate class SPY_TennisView: TennisView {
 fileprivate enum TestScores: String {
     case LoveAll = "0 - 0"
     case FifteenEach = "15 - 15"
+    case Deuce = "Deuce"
     
     static func asString(_ testScores: TestScores) -> String {
         return testScores.rawValue
