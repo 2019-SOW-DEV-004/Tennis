@@ -105,6 +105,9 @@
                         <constraint firstAttribute="height" constant="30" id="kn0-EH-8ti"/>
                     </constraints>
                     <state key="normal" title="Restart"/>
+                    <connections>
+                        <action selector="restartGame:" destination="-1" eventType="touchUpInside" id="qBa-6Y-2Dp"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

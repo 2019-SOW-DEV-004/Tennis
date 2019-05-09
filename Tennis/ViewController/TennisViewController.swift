@@ -9,6 +9,11 @@ class TennisViewController: UIViewController, TennisView {
         tennisGamePresenter = buildTennisGamePresenter()
     }
     
+    @IBAction func restartGame(_ sender: Any) {
+        tennisGamePresenter = buildTennisGamePresenter()
+        updateScore(TennisStatus.asString(.LoveAll))
+    }
+    
     @IBAction func firstPlayerScores(_ sender: Any) {
         tennisGamePresenter.scoresPoint(.FirstPlayer)
     }
@@ -25,7 +30,12 @@ class TennisViewController: UIViewController, TennisView {
         return TennisPresenter.init(firstPlayer, secondPlayer, self)
     }
     
+    private func updateScore(_ score: String) {
+        self.gameStatus.text = score
+    }
+    
+    //Mark: Tennis View
     func displayScore(_ playersGameScore: String) {
-        self.gameStatus.text = playersGameScore
+        updateScore(playersGameScore)
     }
 }
