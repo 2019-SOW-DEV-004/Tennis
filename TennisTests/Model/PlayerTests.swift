@@ -6,12 +6,12 @@ class PlayerTests: XCTestCase {
     private var player: Player!
     
     override func setUp() {
-        player = Player.init("PlayerOne")
+        player = Player.init("FirstPlayer")
     }
 
     func test_ShouldReturnPlayerName_WhenPlayerIsInitialized() {
         
-        XCTAssertEqual("PlayerOne", player.name())
+        XCTAssertEqual("FirstPlayer", player.name())
     }
     
     func test_ShouldUpdateScore_WhenPlayerWinsAPoint() {
