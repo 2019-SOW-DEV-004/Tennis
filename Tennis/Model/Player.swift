@@ -20,13 +20,13 @@ class Player {
     
     func translateScore() -> String {
         switch score {
-        case 0:
+        case Score.Love:
             return TranslateScore.Love.rawValue
-        case 1:
+        case Score.Fifteen:
             return TranslateScore.Fifteen.rawValue
-        case 2:
+        case Score.Thirty:
             return TranslateScore.Thirty.rawValue
-        case 3:
+        case Score.Fourty:
             return TranslateScore.Fourty.rawValue
         default:
             return TranslateScore.Advantage.rawValue
@@ -34,6 +34,6 @@ class Player {
     }
     
     func hasScoredMoreThanFourtyPoints() -> Bool {
-        return score > Score.Fourty.rawValue
+        return score > Score.Fourty
     }
 }
