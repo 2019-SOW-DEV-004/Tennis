@@ -17,6 +17,7 @@
 		6A8A2A83228496C50075BF13 /* TennisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A82228496C50075BF13 /* TennisTests.swift */; };
 		6A8A2A85228499E80075BF13 /* CurrentPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A84228499E80075BF13 /* CurrentPlayer.swift */; };
 		6A8A2A8722849E720075BF13 /* TennisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A8622849E720075BF13 /* TennisView.swift */; };
+		6A8A2A8D2284AF270075BF13 /* TennisStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A8C2284AF270075BF13 /* TennisStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		6A8A2A82228496C50075BF13 /* TennisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisTests.swift; sourceTree = "<group>"; };
 		6A8A2A84228499E80075BF13 /* CurrentPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlayer.swift; sourceTree = "<group>"; };
 		6A8A2A8622849E720075BF13 /* TennisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisView.swift; sourceTree = "<group>"; };
+		6A8A2A8C2284AF270075BF13 /* TennisStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				6A8A2A7E228491AB0075BF13 /* TranslateScore.swift */,
 				6A8A2A84228499E80075BF13 /* CurrentPlayer.swift */,
+				6A8A2A8C2284AF270075BF13 /* TennisStatus.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				6A8A2A81228496030075BF13 /* Tennis.swift in Sources */,
 				6A8A2A8722849E720075BF13 /* TennisView.swift in Sources */,
 				6A8A2A73228488900075BF13 /* Player.swift in Sources */,
+				6A8A2A8D2284AF270075BF13 /* TennisStatus.swift in Sources */,
 				6A8A2A85228499E80075BF13 /* CurrentPlayer.swift in Sources */,
 				6A8A2A7F228491AB0075BF13 /* TranslateScore.swift in Sources */,
 				6A8A2A45228474F20075BF13 /* AppDelegate.swift in Sources */,

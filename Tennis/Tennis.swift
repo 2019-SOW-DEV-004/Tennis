@@ -23,7 +23,7 @@ class Tennis {
     
     private func displayPlayersScore() {
         if isDeuce() {
-            tennisView.displayScore("Deuce")
+            tennisView.displayScore(TennisStatus.Deuce.rawValue)
             return
         }
         
