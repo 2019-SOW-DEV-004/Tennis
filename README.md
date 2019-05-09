@@ -29,6 +29,6 @@ Deployment Target - 11.0
 
 # Screenshot
 
-![alt text](screenshot/TennisGame.png "Resemblence of Output screen")
-
-
+<p align="center">
+<img src="https://github.com/2019-SOW-DEV-004/Tennis/blob/master/Screenshot/TennisGame.png"/>
+</p>
