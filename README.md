@@ -27,4 +27,8 @@ Deployment Target - 11.0
 3. During the course of play anytime user can choose restart to start the game again
 
 
+# Screenshot
+
+![alt text](screenshot/TennisGame.png "Resemblence of Output screen")
+
 
