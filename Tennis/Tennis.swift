@@ -22,6 +22,11 @@ class Tennis {
     }
     
     private func displayPlayersScore() {
+        if isAdvantage() {
+            tennisView.displayScore(TranslateScore.Advantage.rawValue + " " + highestScorePlayerName())
+            return
+        }
+        
         if isDeuce() {
             tennisView.displayScore(TennisStatus.Deuce.rawValue)
             return
@@ -31,11 +36,27 @@ class Tennis {
     }
     
     //Mark: Helper Methods
+    private func isAdvantage() -> Bool {
+        return hasPlayersScoredMoreThanFourtyPoints() && pointDifferenceBetweenPlayers() == 1
+    }
+    
     private func isDeuce() -> Bool {
         return firstPlayer.currentScore() == secondPlayer.currentScore() && hasPlayersScoredMoreThanFourtyPoints()
     }
     
     private func hasPlayersScoredMoreThanFourtyPoints() -> Bool {
         return firstPlayer.hasScoredMoreThanFourtyPoints() || secondPlayer.hasScoredMoreThanFourtyPoints()
+    }
+    
+    private func pointDifferenceBetweenPlayers() -> Int {
+        return abs(firstPlayer.currentScore() - secondPlayer.currentScore())
+    }
+    
+    private func highestScorePlayerName() -> String {
+        if firstPlayer.currentScore() > secondPlayer.currentScore() {
+            return firstPlayer.name()
+        }
+        
+        return secondPlayer.name()
     }
 }
