@@ -8,4 +8,12 @@ class PlayerTests: XCTestCase {
         
         XCTAssertEqual("PlayerOne", player.name())
     }
+    
+    func test_ShouldUpdateScore_WhenPlayerWinsAPoint() {
+        let player = Player.init("PlayerOne")
+        
+        player.updateScore()
+        
+        XCTAssertEqual(1, player.currentScore())
+    }
 }
