@@ -39,7 +39,7 @@ class Tennis {
         }
         
         if isAdvantage() {
-            tennisView.displayScore(TranslateScore.Advantage.rawValue + " " + highestScorePlayerName())
+            tennisView.displayScore(TranslateScore.asString(.Advantage) + " " + highestScorePlayerName())
             return
         }
         

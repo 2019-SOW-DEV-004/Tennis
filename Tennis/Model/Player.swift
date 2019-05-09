@@ -21,15 +21,15 @@ class Player {
     func translateScore() -> String {
         switch score {
         case Score.Love:
-            return TranslateScore.Love.rawValue
+            return TranslateScore.asString(.Love)
         case Score.Fifteen:
-            return TranslateScore.Fifteen.rawValue
+            return TranslateScore.asString(.Fifteen)
         case Score.Thirty:
-            return TranslateScore.Thirty.rawValue
+            return TranslateScore.asString(.Thirty)
         case Score.Fourty:
-            return TranslateScore.Fourty.rawValue
+            return TranslateScore.asString(.Fourty)
         default:
-            return TranslateScore.Advantage.rawValue
+            return TranslateScore.asString(.Advantage)
         }
     }
     

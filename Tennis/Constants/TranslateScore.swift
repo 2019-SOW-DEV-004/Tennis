@@ -4,4 +4,8 @@ enum TranslateScore: String {
     case Thirty = "30"
     case Fourty = "40"
     case Advantage = "AD"
+    
+    static func asString(_ translateScore: TranslateScore) -> String {
+        return translateScore.rawValue
+    }
 }
