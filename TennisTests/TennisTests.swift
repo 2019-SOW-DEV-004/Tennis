@@ -38,6 +38,13 @@ class TennisTests: XCTestCase {
         XCTAssertEqual(TestScores.asString(.FirstPlayerAdvantage),tennisView.gameScore())
     }
     
+    func test_ShouldReturnPlayerHasWon_WhenPlayerScoresMoreThanFourtyAndDifferenceIsMoreThanOne() {
+        self.winConsecutivePointsForFirstPlayer(3, tennis: tennis)
+        self.winConsecutivePointsForSecondPlayer(5, tennis: tennis)
+        
+        XCTAssertEqual(TestScores.asString(.SecondPlayerWon),tennisView.gameScore())
+    }
+    
     private func buildTennisGame(_ tennisView: TennisView) -> Tennis {
         let firstPlayer = Player.init("FirstPlayer")
         let secondPlayer = Player.init("SecondPlayer")
@@ -75,6 +82,7 @@ fileprivate enum TestScores: String {
     case FifteenEach = "15 - 15"
     case Deuce = "Deuce"
     case FirstPlayerAdvantage = "AD FirstPlayer"
+    case SecondPlayerWon = "SecondPlayer Won"
     
     static func asString(_ testScores: TestScores) -> String {
         return testScores.rawValue
