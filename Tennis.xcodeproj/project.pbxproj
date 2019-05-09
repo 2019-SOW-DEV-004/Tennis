@@ -21,7 +21,7 @@
 		6A8A2A8F2284B2F30075BF13 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A8E2284B2F30075BF13 /* Score.swift */; };
 		6A8A2A922284C9010075BF13 /* TennisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A902284C9010075BF13 /* TennisViewController.swift */; };
 		6A8A2A932284C9010075BF13 /* TennisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A2A912284C9010075BF13 /* TennisViewController.xib */; };
-		6A8A2A9D2284D8420075BF13 /* TennisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A9C2284D8420075BF13 /* TennisViewController.swift */; };
+		6A8A2A9D2284D8420075BF13 /* TennisViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A9C2284D8420075BF13 /* TennisViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		6A8A2A902284C9010075BF13 /* TennisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisViewController.swift; sourceTree = "<group>"; };
 		6A8A2A912284C9010075BF13 /* TennisViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TennisViewController.xib; sourceTree = "<group>"; };
 		6A8A2A9A2284D8420075BF13 /* TennisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A8A2A9C2284D8420075BF13 /* TennisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisViewController.swift; sourceTree = "<group>"; };
+		6A8A2A9C2284D8420075BF13 /* TennisViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisViewControllerTests.swift; sourceTree = "<group>"; };
 		6A8A2A9E2284D8420075BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,7 +200,7 @@
 		6A8A2AA42284D8510075BF13 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6A8A2A9C2284D8420075BF13 /* TennisViewController.swift */,
+				6A8A2A9C2284D8420075BF13 /* TennisViewControllerTests.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A8A2A9D2284D8420075BF13 /* TennisViewController.swift in Sources */,
+				6A8A2A9D2284D8420075BF13 /* TennisViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

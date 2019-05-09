@@ -1,6 +1,6 @@
 import XCTest
 
-class TennisViewController: XCTestCase {
+class TennisViewControllerTests: XCTestCase {
 
     override func setUp() {
         XCUIApplication().launch()
