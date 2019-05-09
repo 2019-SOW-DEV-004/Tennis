@@ -15,4 +15,12 @@ class TennisViewControllerTests: XCTestCase {
         
         XCTAssertTrue(score.exists)
     }
+    
+    func test_ShouldReturnDefaultPoints_WhenRestartIsSelected() {
+        let app = XCUIApplication()
+        app.buttons["restart"].tap()
+        
+        let score = app.staticTexts["Love All"]
+        XCTAssertTrue(score.exists)
+    }
 }
