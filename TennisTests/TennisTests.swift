@@ -12,7 +12,7 @@ class TennisTests: XCTestCase {
     func test_ShouldReturnLoveAll_WhenPlayerStartsTheGame() {
         let _ = buildTennisGame()
         
-        XCTAssertEqual("0 - 0", tennisView.gameScore())
+        XCTAssertEqual(TestScores.LoveAll.rawValue, tennisView.gameScore())
     }
     
     func test_ShouldReturnFifteenEach_WhenEachPlayerScoresSinglePoint() {
@@ -21,7 +21,7 @@ class TennisTests: XCTestCase {
         tennis.scoresPoint(.firstPlayer)
         tennis.scoresPoint(.secondPlayer)
         
-        XCTAssertEqual("15 - 15", tennisView.gameScore())
+        XCTAssertEqual(TestScores.FifteenEach.rawValue, tennisView.gameScore())
     }
     
     private func buildTennisGame() -> Tennis {
@@ -33,7 +33,7 @@ class TennisTests: XCTestCase {
 }
 
 fileprivate class SPY_TennisView: TennisView {
-    private var playersGameScore = "0 - 0"
+    private var playersGameScore = TestScores.LoveAll.rawValue
     
     func displayScore(_ playersGameScore: String) {
         self.playersGameScore = playersGameScore
@@ -42,5 +42,10 @@ fileprivate class SPY_TennisView: TennisView {
     func gameScore() -> String {
         return playersGameScore
     }
+}
+
+fileprivate enum TestScores: String {
+    case LoveAll = "0 - 0"
+    case FifteenEach = "15 - 15"
 }
 
