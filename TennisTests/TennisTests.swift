@@ -31,16 +31,16 @@ class TennisTests: XCTestCase {
     }
     
     func test_ShouldReturnAdvantageForFirstPlayer_WhenPlayerScoresOnePointAfterDeuce() {
-        self.winConsecutivePointsForFirstPlayer(3, tennis: tennis)
-        self.winConsecutivePointsForSecondPlayer(3, tennis: tennis)
+        winConsecutivePointsForFirstPlayer(3, tennis: tennis)
+        winConsecutivePointsForSecondPlayer(3, tennis: tennis)
         tennis.scoresPoint(.firstPlayer)
         
         XCTAssertEqual(TestScores.asString(.FirstPlayerAdvantage),tennisView.gameScore())
     }
     
     func test_ShouldReturnPlayerHasWon_WhenPlayerScoresMoreThanFourtyAndDifferenceIsMoreThanOne() {
-        self.winConsecutivePointsForFirstPlayer(3, tennis: tennis)
-        self.winConsecutivePointsForSecondPlayer(5, tennis: tennis)
+        winConsecutivePointsForFirstPlayer(3, tennis: tennis)
+        winConsecutivePointsForSecondPlayer(5, tennis: tennis)
         
         XCTAssertEqual(TestScores.asString(.SecondPlayerWon),tennisView.gameScore())
     }
