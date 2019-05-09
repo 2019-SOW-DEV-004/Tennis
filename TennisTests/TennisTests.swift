@@ -7,7 +7,7 @@ class TennisTests: XCTestCase {
 
     override func setUp() {
         tennisView = SPY_TennisView()
-        tennis = buildTennisGame()
+        tennis = buildTennisGame(tennisView)
     }
 
     func test_ShouldReturnLoveAll_WhenPlayerStartsTheGame() {
@@ -38,7 +38,7 @@ class TennisTests: XCTestCase {
         XCTAssertEqual(TestScores.asString(.FirstPlayerAdvantage),tennisView.gameScore())
     }
     
-    private func buildTennisGame() -> Tennis {
+    private func buildTennisGame(_ tennisView: TennisView) -> Tennis {
         let firstPlayer = Player.init("FirstPlayer")
         let secondPlayer = Player.init("SecondPlayer")
         
