@@ -6,6 +6,7 @@ class TennisViewController: UIViewController, TennisView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Tennis Game";
         tennisGamePresenter = buildTennisGamePresenter()
     }
     
