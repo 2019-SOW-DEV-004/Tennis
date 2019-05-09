@@ -3,6 +3,8 @@ class Tennis {
     private let secondPlayer: Player
     private unowned let tennisView: TennisView
     
+    private var isGameOver = false
+    
     init(_ firstPlayer: Player, _ secondPlayer: Player, _ tennisView: TennisView) {
         self.firstPlayer = firstPlayer
         self.secondPlayer = secondPlayer
@@ -11,6 +13,10 @@ class Tennis {
     
     func scoresPoint(_ currentPlayer: CurrentPlayer)
     {
+        if(isGameOver) {
+            return
+        }
+        
         switch currentPlayer {
         case .firstPlayer:
             firstPlayer.updateScore()
@@ -23,6 +29,7 @@ class Tennis {
     
     private func displayPlayersScore() {
         if isWinner() {
+            isGameOver = true
             tennisView.displayScore(highestScorePlayerName() + " " + TennisStatus.Won.rawValue)
             return
         }
