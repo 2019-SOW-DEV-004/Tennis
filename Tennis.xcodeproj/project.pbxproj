@@ -18,6 +18,7 @@
 		6A8A2A85228499E80075BF13 /* CurrentPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A84228499E80075BF13 /* CurrentPlayer.swift */; };
 		6A8A2A8722849E720075BF13 /* TennisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A8622849E720075BF13 /* TennisView.swift */; };
 		6A8A2A8D2284AF270075BF13 /* TennisStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A8C2284AF270075BF13 /* TennisStatus.swift */; };
+		6A8A2A8F2284B2F30075BF13 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A8E2284B2F30075BF13 /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		6A8A2A84228499E80075BF13 /* CurrentPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlayer.swift; sourceTree = "<group>"; };
 		6A8A2A8622849E720075BF13 /* TennisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisView.swift; sourceTree = "<group>"; };
 		6A8A2A8C2284AF270075BF13 /* TennisStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisStatus.swift; sourceTree = "<group>"; };
+		6A8A2A8E2284B2F30075BF13 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				6A8A2A7E228491AB0075BF13 /* TranslateScore.swift */,
 				6A8A2A84228499E80075BF13 /* CurrentPlayer.swift */,
 				6A8A2A8C2284AF270075BF13 /* TennisStatus.swift */,
+				6A8A2A8E2284B2F30075BF13 /* Score.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				6A8A2A81228496030075BF13 /* Tennis.swift in Sources */,
 				6A8A2A8722849E720075BF13 /* TennisView.swift in Sources */,
+				6A8A2A8F2284B2F30075BF13 /* Score.swift in Sources */,
 				6A8A2A73228488900075BF13 /* Player.swift in Sources */,
 				6A8A2A8D2284AF270075BF13 /* TennisStatus.swift in Sources */,
 				6A8A2A85228499E80075BF13 /* CurrentPlayer.swift in Sources */,

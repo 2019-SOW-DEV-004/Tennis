@@ -34,6 +34,6 @@ class Player {
     }
     
     func hasScoredMoreThanFourtyPoints() -> Bool {
-        return score > 3
+        return score > Score.Fourty.rawValue
     }
 }
