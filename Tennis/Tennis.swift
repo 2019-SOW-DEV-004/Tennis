@@ -34,7 +34,7 @@ class Tennis {
     private func translatePlayersScore() {
         if isWinner() {
             isGameOver = true
-            tennisView.displayScore(highestScorePlayerName() + " " + TennisStatus.Won.rawValue)
+            tennisView.displayScore(highestScorePlayerName() + " " + TennisStatus.asString(.Won))
             return
         }
         
@@ -44,7 +44,7 @@ class Tennis {
         }
         
         if isDeuce() {
-            tennisView.displayScore(TennisStatus.Deuce.rawValue)
+            tennisView.displayScore(TennisStatus.asString(.Deuce))
             return
         }
         
