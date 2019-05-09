@@ -1,7 +1,7 @@
 import XCTest
 @testable import Tennis
 
-class TennisTests: XCTestCase {
+class TennisPresenterTests: XCTestCase {
     private var tennisView: SPY_TennisView!
     private var tennisPresenter: TennisPresenter!
 
