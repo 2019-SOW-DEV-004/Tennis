@@ -3,20 +3,19 @@ import XCTest
 
 class TennisTests: XCTestCase {
     private var tennisView: SPY_TennisView!
+    private var tennis: Tennis!
 
     override func setUp() {
         tennisView = SPY_TennisView()
+        tennis = buildTennisGame()
     }
 
     func test_ShouldReturnLoveAll_WhenPlayerStartsTheGame() {
-        let _ = buildTennisGame()
         
         XCTAssertEqual(TestScores.asString(.LoveAll), tennisView.gameScore())
     }
     
     func test_ShouldReturnFifteenEach_WhenEachPlayerScoresSinglePoint() {
-        let tennis = buildTennisGame()
-        
         tennis.scoresPoint(.firstPlayer)
         tennis.scoresPoint(.secondPlayer)
         
@@ -24,8 +23,6 @@ class TennisTests: XCTestCase {
     }
     
     func test_ShouldReturnDeuce_WhenBothPlayerScoresSameScoreAndMoreThanFourty() {
-        let tennis = buildTennisGame()
-        
         winConsecutivePointsForFirstPlayer(3, tennis: tennis)
         winConsecutivePointsForSecondPlayer(4, tennis: tennis)
         tennis.scoresPoint(.firstPlayer)
@@ -34,8 +31,6 @@ class TennisTests: XCTestCase {
     }
     
     func test_ShouldReturnAdvantageForFirstPlayer_WhenPlayerScoresOnePointAfterDeuce() {
-        let tennis = buildTennisGame()
-
         self.winConsecutivePointsForFirstPlayer(3, tennis: tennis)
         self.winConsecutivePointsForSecondPlayer(3, tennis: tennis)
         tennis.scoresPoint(.firstPlayer)
