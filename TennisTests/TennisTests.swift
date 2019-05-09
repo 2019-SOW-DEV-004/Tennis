@@ -9,6 +9,15 @@ class TennisTests: XCTestCase {
         XCTAssertEqual("0 - 0", tennis.getPlayersScore())
     }
     
+    func test_ShouldReturnFifteenEach_WhenEachPlayerScoresSinglePoint() {
+        let tennis = buildTennisGame()
+        
+        tennis.scoresPoint(.firstPlayer)
+        tennis.scoresPoint(.secondPlayer)
+        
+        XCTAssertEqual("15 - 15", tennis.getPlayersScore())
+    }
+    
     private func buildTennisGame() -> Tennis {
         let firstPlayer = Player.init("FirstPlayer")
         let secondPlayer = Player.init("SecondPlayer")
