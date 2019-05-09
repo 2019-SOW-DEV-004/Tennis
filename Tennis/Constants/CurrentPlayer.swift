@@ -1,4 +1,4 @@
 enum CurrentPlayer {
-    case firstPlayer
-    case secondPlayer
+    case FirstPlayer
+    case SecondPlayer
 }

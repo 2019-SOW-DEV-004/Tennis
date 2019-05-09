@@ -24,9 +24,9 @@ class Tennis {
     
     private func updatePlayersScore(_ currentPlayer: CurrentPlayer) {
         switch currentPlayer {
-        case .firstPlayer:
+        case .FirstPlayer:
             firstPlayer.updateScore()
-        case .secondPlayer:
+        case .SecondPlayer:
             secondPlayer.updateScore()
         }
     }

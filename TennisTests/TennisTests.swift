@@ -16,8 +16,8 @@ class TennisTests: XCTestCase {
     }
     
     func test_ShouldReturnFifteenEach_WhenEachPlayerScoresSinglePoint() {
-        tennis.scoresPoint(.firstPlayer)
-        tennis.scoresPoint(.secondPlayer)
+        tennis.scoresPoint(.FirstPlayer)
+        tennis.scoresPoint(.SecondPlayer)
         
         XCTAssertEqual(TestScores.asString(.FifteenEach), tennisView.gameScore())
     }
@@ -25,7 +25,7 @@ class TennisTests: XCTestCase {
     func test_ShouldReturnDeuce_WhenBothPlayerScoresSameScoreAndMoreThanFourty() {
         winConsecutivePointsForFirstPlayer(3, tennis: tennis)
         winConsecutivePointsForSecondPlayer(4, tennis: tennis)
-        tennis.scoresPoint(.firstPlayer)
+        tennis.scoresPoint(.FirstPlayer)
         
         XCTAssertEqual(TestScores.asString(.Deuce),tennisView.gameScore())
     }
@@ -33,7 +33,7 @@ class TennisTests: XCTestCase {
     func test_ShouldReturnAdvantageForFirstPlayer_WhenPlayerScoresOnePointAfterDeuce() {
         winConsecutivePointsForFirstPlayer(3, tennis: tennis)
         winConsecutivePointsForSecondPlayer(3, tennis: tennis)
-        tennis.scoresPoint(.firstPlayer)
+        tennis.scoresPoint(.FirstPlayer)
         
         XCTAssertEqual(TestScores.asString(.FirstPlayerAdvantage),tennisView.gameScore())
     }
@@ -62,13 +62,13 @@ class TennisTests: XCTestCase {
     
     private func winConsecutivePointsForFirstPlayer(_ numberOfTimes: Int, tennis: Tennis) {
         for _ in 1 ... numberOfTimes {
-            tennis.scoresPoint(.firstPlayer)
+            tennis.scoresPoint(.FirstPlayer)
         }
     }
     
     private func winConsecutivePointsForSecondPlayer(_ numberOfTimes: Int, tennis: Tennis) {
         for _ in 1 ... numberOfTimes {
-            tennis.scoresPoint(.secondPlayer)
+            tennis.scoresPoint(.SecondPlayer)
         }
     }
 }
