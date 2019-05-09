@@ -49,6 +49,16 @@
                ReferencedContainer = "container:Tennis.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6A8A2A992284D8420075BF13"
+               BuildableName = "TennisUITests.xctest"
+               BlueprintName = "TennisUITests"
+               ReferencedContainer = "container:Tennis.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

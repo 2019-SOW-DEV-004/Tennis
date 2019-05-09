@@ -21,10 +21,18 @@
 		6A8A2A8F2284B2F30075BF13 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A8E2284B2F30075BF13 /* Score.swift */; };
 		6A8A2A922284C9010075BF13 /* TennisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A902284C9010075BF13 /* TennisViewController.swift */; };
 		6A8A2A932284C9010075BF13 /* TennisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A2A912284C9010075BF13 /* TennisViewController.xib */; };
+		6A8A2A9D2284D8420075BF13 /* TennisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A2A9C2284D8420075BF13 /* TennisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		6A8A2A56228474F30075BF13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8A2A39228474F20075BF13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8A2A40228474F20075BF13;
+			remoteInfo = Tennis;
+		};
+		6A8A2A9F2284D8420075BF13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6A8A2A39228474F20075BF13 /* Project object */;
 			proxyType = 1;
@@ -52,6 +60,9 @@
 		6A8A2A8E2284B2F30075BF13 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		6A8A2A902284C9010075BF13 /* TennisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisViewController.swift; sourceTree = "<group>"; };
 		6A8A2A912284C9010075BF13 /* TennisViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TennisViewController.xib; sourceTree = "<group>"; };
+		6A8A2A9A2284D8420075BF13 /* TennisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8A2A9C2284D8420075BF13 /* TennisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisViewController.swift; sourceTree = "<group>"; };
+		6A8A2A9E2284D8420075BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +80,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A8A2A972284D8420075BF13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +95,7 @@
 			children = (
 				6A8A2A43228474F20075BF13 /* Tennis */,
 				6A8A2A58228474F30075BF13 /* TennisTests */,
+				6A8A2A9B2284D8420075BF13 /* TennisUITests */,
 				6A8A2A42228474F20075BF13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +105,7 @@
 			children = (
 				6A8A2A41228474F20075BF13 /* Tennis.app */,
 				6A8A2A55228474F30075BF13 /* TennisTests.xctest */,
+				6A8A2A9A2284D8420075BF13 /* TennisUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +188,23 @@
 			path = TennisPresenter;
 			sourceTree = "<group>";
 		};
+		6A8A2A9B2284D8420075BF13 /* TennisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A8A2AA42284D8510075BF13 /* ViewController */,
+				6A8A2A9E2284D8420075BF13 /* Info.plist */,
+			);
+			path = TennisUITests;
+			sourceTree = "<group>";
+		};
+		6A8A2AA42284D8510075BF13 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A8A2A9C2284D8420075BF13 /* TennisViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +243,24 @@
 			productReference = 6A8A2A55228474F30075BF13 /* TennisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6A8A2A992284D8420075BF13 /* TennisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8A2AA12284D8420075BF13 /* Build configuration list for PBXNativeTarget "TennisUITests" */;
+			buildPhases = (
+				6A8A2A962284D8420075BF13 /* Sources */,
+				6A8A2A972284D8420075BF13 /* Frameworks */,
+				6A8A2A982284D8420075BF13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A8A2AA02284D8420075BF13 /* PBXTargetDependency */,
+			);
+			name = TennisUITests;
+			productName = TennisUITests;
+			productReference = 6A8A2A9A2284D8420075BF13 /* TennisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +277,10 @@
 					6A8A2A54228474F30075BF13 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+						TestTargetID = 6A8A2A40228474F20075BF13;
+					};
+					6A8A2A992284D8420075BF13 = {
+						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 6A8A2A40228474F20075BF13;
 					};
 				};
@@ -241,6 +300,7 @@
 			targets = (
 				6A8A2A40228474F20075BF13 /* Tennis */,
 				6A8A2A54228474F30075BF13 /* TennisTests */,
+				6A8A2A992284D8420075BF13 /* TennisUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +317,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A8A2A53228474F30075BF13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8A2A982284D8420075BF13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,6 +358,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A8A2A962284D8420075BF13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8A2A9D2284D8420075BF13 /* TennisViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,6 +373,11 @@
 			isa = PBXTargetDependency;
 			target = 6A8A2A40228474F20075BF13 /* Tennis */;
 			targetProxy = 6A8A2A56228474F30075BF13 /* PBXContainerItemProxy */;
+		};
+		6A8A2AA02284D8420075BF13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A8A2A40228474F20075BF13 /* Tennis */;
+			targetProxy = 6A8A2A9F2284D8420075BF13 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -506,6 +586,44 @@
 			};
 			name = Release;
 		};
+		6A8A2AA22284D8420075BF13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TennisUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = be.bnpparibasfortis.TCSiPhoneEasyBankingEnterprise.TennisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tennis;
+			};
+			name = Debug;
+		};
+		6A8A2AA32284D8420075BF13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TennisUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = be.bnpparibasfortis.TCSiPhoneEasyBankingEnterprise.TennisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tennis;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -532,6 +650,15 @@
 			buildConfigurations = (
 				6A8A2A6D228474F30075BF13 /* Debug */,
 				6A8A2A6E228474F30075BF13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8A2AA12284D8420075BF13 /* Build configuration list for PBXNativeTarget "TennisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8A2AA22284D8420075BF13 /* Debug */,
+				6A8A2AA32284D8420075BF13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
