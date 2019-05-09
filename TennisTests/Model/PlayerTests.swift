@@ -17,7 +17,7 @@ class PlayerTests: XCTestCase {
     func test_ShouldUpdateScore_WhenPlayerWinsAPoint() {
         player.updateScore()
         
-        XCTAssertEqual(1, player.currentScore())
+        XCTAssertEqual(Score.Fifteen, player.currentScore())
     }
     
     func test_ShouldReturnTranslateScoreWithTennisPointRepresentation_WhenPlayerWinsAPoint() {
